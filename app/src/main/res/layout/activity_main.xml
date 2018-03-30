@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center">
+
+    <!--<com.jqh.jni.nativejni.JSurfaceView-->
+        <!--android:id="@+id/surfaceViewid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mediaurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <Spinner
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        />
+    <!-- 播放速度控制-->
+    <Spinner
+        android:id="@+id/speedSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/playeAndStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/pauseAndGoOnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/gotoPushStreamActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="push"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/gotoRecordCameraActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/gotoLiveActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/gotoPushCameraActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推摄像头"/>
+        <Button
+            android:id="@+id/gotoRecordMicActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录制麦克"/>
+        <Button
+            android:id="@+id/gotoPublicAVStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推流"/>
+        <Button
+            android:id="@+id/gotoPlayerActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回放"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"/>
+
+    <com.jqh.jni.nativejni.JSurfaceView
+        android:id="@+id/surfaceViewid"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:max="200"
+        android:paddingRight="12dp"
+        android:paddingTop="3dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoJni</string>
+    <string name="title_activity_push_camera">PushCameraActivity</string>
+    <string name="title_activity_mic_recorde">MicRecordeActivity</string>
+</resources>
